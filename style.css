@@ -88,6 +88,8 @@ body {
 }
 
 .button-container {
+    display: flex;
+    gap: 1rem;
     width: 300px;
     justify-content: center;
 }
@@ -143,20 +145,24 @@ ul {
 }
 
 /* Botão de sortear título */
-.button-draw {
+.button-draw,
+.button-reset {
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 10px 40px;
+    padding: 5px 60px;
     color: var(--color-white);
     background-color: var(--color-button);
     font-size: 16px;
 }
 
-.button-draw img {
+.button-draw img,
+.button-reset img {
+    width: 20px;
     margin-right: 40px;
 }
 
-.button-draw:hover {
+.button-draw:hover,
+.button-reset:hover {
     background-color: var(--color-button-hover);
 }
