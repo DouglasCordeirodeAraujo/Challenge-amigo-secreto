@@ -38,6 +38,7 @@ function sortearAmigo() {
 
     if (sorteados.size === amigos.length) {
         alert('Todos os amigos já foram sorteados.');
+        document.getElementById('resetar').removeAttribute('disabled');
         return;
     }
 
@@ -50,4 +51,12 @@ function sortearAmigo() {
 
     document.getElementById('listaAmigos').innerHTML = '';
     document.getElementById('resultado').innerHTML = `<li>O amigo secreto sorteado é: ${amigoSorteado}</li>`;
+}
+
+function resetarSorteio() {
+    amigos = [];
+    sorteados.clear();
+    document.getElementById('listaAmigos').innerHTML = '';
+    document.getElementById('resultado').innerHTML = '';
+    document.getElementById('resetar').setAttribute('disabled', true);
 }
