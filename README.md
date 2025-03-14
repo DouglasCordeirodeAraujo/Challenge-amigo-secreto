@@ -2,6 +2,7 @@
 
 <h2>🔖 Sobre</h2>
 <p>Projeto de um site para sorteio de amigo secreto, desafio javascript.</p>
+<a href="https://challenge-amigo-secreto-coral-xi.vercel.app/">Challenge amigo secreto</a>
 
 ## 🚀 Tecnologias
 <div>
